@@ -40,7 +40,8 @@ export default function AboutUs() {
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-center">
             <div>
-              <h1 className="text-4xl font-bold mb-2">E-Plywood & Laminates</h1>
+              <h1 className="text-4xl font-bold mb-2">GRPS
+Plywood & Laminates</h1>
               <p className="text-amber-200 text-lg pl-12">Innovating Wood Solutions Since 1994</p>
             </div>
             
