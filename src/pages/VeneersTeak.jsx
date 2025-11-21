@@ -1,121 +1,89 @@
-// Door.jsx
+// VeneersTeak.jsx
 import React, { useState } from "react";
-import ClubWood from "../assests/Door/ClubWood.png";
-import ClubWood25 from "../assests/Door/ClubWood25.png";
-import ClubWood32 from "../assests/Door/ClubWood32.png";
-import GreenDoor from "../assests/Door/GreenDoor.png";
-import Marino from "../assests/Door/Marino.png";
-import SainikDoor from "../assests/Door/SainkDoor.png";
-
-const doors = [
+import Mikasa from"../assests/Vaneers/mikasa.png";
+import GreenplyVeneer from"../assests/Vaneers/greenply.png";
+import LocalVeneer from"../assests/Vaneers/local.png";
+import BhutanVeneer from"../assests/Vaneers/Bhutan.png";
+const veneerData = [
   {
     id: 1,
-    name: "Premium Wooden Door",
-    image: ClubWood,
+    name: "Mikasa Decowood Veneers",
+    image: Mikasa,
     features: [
-      "Solid hardwood structure for strength",
-      "Weather and termite resistant",
-      "Available in matte and glossy finishes",
-      "Customizable dimensions",
-      "Sound-insulated core",
+      "Architectural-grade sliced veneer",
+      "Book & slip matched sequences",
+      "Ready-to-polish surface",
+      "250+ exotic species",
+      "10-year warranty",
     ],
     specifications: {
-      Material: "Teak, Oak, or Engineered Wood",
-      Thickness: "25 mm – 40 mm",
-      
-      Finish: "Matte / Glossy",
+      thickness: "0.5 mm / 0.6 mm",
+      sheetSize: "8 ft × 4 ft",
+      species: "Oak, Walnut, Ebony, Teak etc",
+      warranty: "10 years",
+      application: "Furniture, Wall, Door",
     },
   },
   {
     id: 2,
-    name: "Green Ply Door",
-    image: GreenDoor,
+    name: "Greenply Veneers & Teak",
+    image: GreenplyVeneer,
     features: [
-      "Boiling-water-proof plywood core",
-      "High-impact resistance",
-      "Eco-friendly resins",
-      "Borer & termite proof",
-      "Ready-to-paint surface",
+      "FSC-certified logs",
+      "Consistent grain & colour",
+      "Pre-sanded & defect repaired",
+      "Teak & Burmese teak grades",
+      "Lifetime warranty*",
     ],
     specifications: {
-      Material: "Green Ply Platinum",
-      Thickness: "30 mm / 35 mm",
-      
-      Finish: "Natural / Veneer / Laminate",
+      thickness: "0.5 mm / 0.6 mm",
+      sheetSize: "8 ft × 4 ft",
+      species: "Teak, Gurjan, Oak, Walnut",
+      warranty: "Lifetime*",
+      application: "Premium furniture & doors",
     },
   },
   {
     id: 3,
-    name: "Sainik Door",
-    image: SainikDoor,
+    name: "Local Veneers",
+    image: LocalVeneer,
     features: [
-      "Hardwood frame with particle core",
-      "Economical pricing",
-      "Seasoned wood to prevent warping",
-      "Pre-polished for quick install",
-      "Ideal for interior rooms",
+      "Cost-effective Indian species",
+      "Quick local availability",
+      "Ideal for budget projects",
+      "Can be stained to shade",
+      "5-year warranty",
     ],
     specifications: {
-      Material: "Hardwood + Particle Board",
-      Thickness: "25 mm",
-            Finish: "Teak polish",
+      thickness: "0.5 mm",
+      sheetSize: "8 ft × 4 ft",
+      species: "Jack, Haldu, Chir, Pine",
+      warranty: "5 years",
+      application: "Economy furniture, panels",
     },
   },
   {
     id: 4,
-    name: "Marino Door",
-    image: Marino,
+    name: "Bhutan Veneers",
+    image: BhutanVeneer,
     features: [
-      "Marine-grade plywood construction",
-      "100 % waterproof",
-      "Fungus & borer resistant",
-      "Heavy-duty commercial use",
-      "Can be laminated or painted",
+      "Mountain-grown hardwood logs",
+      "Close, straight grain",
+      "Uniform colour tone",
+      "Good polish absorption",
+      "7-year warranty",
     ],
     specifications: {
-      Material: "Marine Ply 710 grade",
-      Thickness: "30 mm / 38 mm",
-      
-      Finish: "Raw / Laminate / Veneer",
-    },
-  },
-  {
-    id: 6,
-    name: "Club Wood Door 25 mm",
-    image: ClubWood25,
-    features: [
-      "Engineered wood frame",
-      "25 mm slim profile",
-      "Interior bedroom / bathroom use",
-      "Pre-veneered surface",
-      "Light-weight for easy handling",
-    ],
-    specifications: {
-      Material: "Engineered Wood",
-      Thickness: "25 mm",
-            Finish: "Natural veneer",
-    },
-  },
-  {
-    id: 7,
-    name: "Club Wood Door 32 mm",
-    image: ClubWood32,
-    features: [
-      "Thicker 32 mm stiles & rails",
-      "Engineered wood for stability",
-      "Sound dampening infill",
-      "Suitable for main interiors",
-      "Ready for paint or laminate",
-    ],
-    specifications: {
-      Material: "Engineered Wood",
-      Thickness: "32 mm",
-            Finish: "Raw / Laminate / Veneer",
+      thickness: "0.5 mm / 0.6 mm",
+      sheetSize: "8 ft × 4 ft",
+      species: "Gurjan, Oak, Walnut",
+      warranty: "7 years",
+      application: "Doors, Furniture, Wall-cladding",
     },
   },
 ];
 
-export default function Door() {
+export default function VeneersTeak() {
   const [hovered, setHovered] = useState(null);
 
   return (
@@ -123,49 +91,46 @@ export default function Door() {
       {/* Header */}
       <div className="text-center mb-12 animate-fade-in-down">
         <h1 className="text-5xl font-bold mb-3 bg-gradient-to-r from-green-800 to-amber-800 bg-clip-text text-transparent">
-          Door Collection
+          Veneers & Teak Collection
         </h1>
         <div className="w-24 h-1 bg-gradient-to-r from-green-800 to-amber-800 mx-auto rounded-full" />
       </div>
 
       {/* Grid */}
       <div className="max-w-7xl mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {doors.map((d, idx) => (
+        {veneerData.map((p, idx) => (
           <div
-            key={d.id}
-            onMouseEnter={() => setHovered(d.id)}
+            key={p.id}
+            onMouseEnter={() => setHovered(p.id)}
             onMouseLeave={() => setHovered(null)}
             className={`rounded-3xl overflow-hidden transition-all duration-500 hover:-translate-y-3 animate-slide-up group
-              ${hovered === d.id
-                ? "shadow-2xl bg-gradient-to-r from-green-900 via-green-800 to-amber-900/95 backdrop-blur-md"
-                : "bg-gradient-to-r from-green-900 via-green-800 to-amber-900/90 backdrop-blur-sm"
+              ${
+                hovered === p.id
+                  ? "shadow-2xl bg-gradient-to-r from-green-900 via-green-800 to-amber-900/95 backdrop-blur-md"
+                  : "bg-gradient-to-r from-green-900 via-green-800 to-amber-900/90 backdrop-blur-sm"
               }`}
             style={{ animationDelay: `${idx * 100}ms` }}
           >
             {/* IMAGE */}
-            <div className="relative w-full h-64 bg-white rounded-xl overflow-hidden shadow-md border border-gray-200 group">
-
-              {/* Image */}
+            <div className="relative w-full aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
               <img
-                src={d.image}
-                alt={d.name}
-                className="w-full h-full object-contain p-3 transition-all duration-500 group-hover:scale-105"
+                src={p.image}
+                alt={p.name}
+                className="absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
               />
-
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               {/* Badge */}
-              <div className="absolute top-3 left-3 bg-black/70 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-md tracking-wide">
-                {d.name}
+              <div className="absolute top-4 left-4 bg-amber-100/95 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg transform translate-x-0 group-hover:translate-x-2 transition-transform duration-300 border border-amber-200">
+                <span className="text-sm font-semibold text-green-900">
+                  {p.name}
+                </span>
               </div>
-
-              {/* Subtle hover glow */}
-              <div className="absolute inset-0 group-hover:shadow-[0_8px_20px_rgba(0,0,0,0.2)] transition-all duration-500 pointer-events-none"></div>
-
             </div>
-
 
             {/* CONTENT */}
             <div className="p-6 text-white">
-              <h2 className="text-xl font-bold text-amber-100 mb-2">{d.name}</h2>
+              <h2 className="text-xl font-bold text-amber-100 mb-2">{p.name}</h2>
 
               {/* Features */}
               <h3 className="font-bold text-amber-100 mb-3 flex items-center gap-2 text-sm uppercase tracking-wide">
@@ -173,12 +138,12 @@ export default function Door() {
                 Features
               </h3>
               <ul className="space-y-2 mb-5">
-                {d.features.map((f, i) => (
+                {p.features.map((f, i) => (
                   <li
                     key={i}
                     className="flex items-start gap-2 text-amber-50 text-sm transform transition-all duration-300 hover:translate-x-1"
                     style={{
-                      animationDelay: `${hovered === d.id ? i * 50 : 0}ms`,
+                      animationDelay: `${hovered === p.id ? i * 50 : 0}ms`,
                     }}
                   >
                     <svg
@@ -203,7 +168,7 @@ export default function Door() {
                 Specifications
               </h3>
               <div className="bg-green-950/30 rounded-xl p-4 space-y-2 backdrop-blur-sm border border-green-800/30">
-                {Object.entries(d.specifications).map(([k, v]) => (
+                {Object.entries(p.specifications).map(([k, v]) => (
                   <div
                     key={k}
                     className="flex justify-between items-center py-2 border-b border-amber-700/30 last:border-0 text-sm hover:bg-green-800/20 hover:px-2 rounded transition-all duration-200"

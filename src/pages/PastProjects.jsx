@@ -1,4 +1,5 @@
 import React from "react";
+import All from "../assests/all.png";
 import { Package, Layers, Trees, Brush, Sparkles, CheckCircle2, Award, TrendingUp, Users, Target, Shield, Zap } from "lucide-react";
 
 const WorkExperience = () => {
@@ -319,6 +320,40 @@ Plywood & Laminates</span>, we offer a complete range of
           </div>
         </div>
       </section>
+
+    {/* Header */}
+<div className="w-full flex flex-col items-center mb-16 px-4 text-center py-12 bg-gradient-to-br from-amber-50 to-green-50">
+
+  {/* Image Section */}
+  <div className="flex justify-center mb-12 w-full">
+    <div className="relative w-full max-w-4xl">
+      {/* Glow Background */}
+      <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-amber-400 rounded-3xl blur-3xl opacity-30 animate-pulse"></div>
+
+      {/* Main Image Container */}
+      <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 shadow-2xl border border-green-200">
+        <img
+          src={All}
+          alt="All Products"
+          className="w-full h-auto object-contain rounded-2xl transition-all duration-500 hover:scale-105"
+        />
+      </div>
+    </div>
+  </div>
+
+  {/* Title */}
+  <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-green-800 to-amber-800 bg-clip-text text-transparent">
+    Our Products
+  </h1>
+
+  {/* Subtitle */}
+  <p className="text-base md:text-lg text-green-700 mb-4 max-w-2xl mx-auto">
+    Discover our premium collection of high-quality products
+  </p>
+
+  {/* Underline Divider */}
+  <div className="w-28 md:w-32 h-1.5 bg-gradient-to-r from-green-800 via-amber-600 to-amber-800 rounded-full"></div>
+</div>
 
       {/* Why Choose Us Section */}
       <section

@@ -60,7 +60,7 @@ Plywood & Laminates</h1>
             </h2>
             <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
               <p>
-                Welcome to <strong className="text-green-900">E-Plywood & Laminates</strong> — your trusted destination for premium wood, laminate, and decorative surface solutions. Since our founding in <strong>1994</strong>, we’ve built a strong reputation for delivering quality, reliability, and innovation in every project we undertake.
+                Welcome to <strong className="text-green-900">GRPS Plywood & Laminates</strong> — your trusted destination for premium wood, laminate, and decorative surface solutions. Since our founding in <strong>1994</strong>, we’ve built a strong reputation for delivering quality, reliability, and innovation in every project we undertake.
               </p>
 
               <p>

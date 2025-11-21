@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import products from "../data/products";
 
+
 export default function Products() {
   const [hoveredCard, setHoveredCard] = useState(null);
   const navigate = useNavigate();
@@ -23,7 +24,10 @@ export default function Products() {
             key={item.id}
             onMouseEnter={() => setHoveredCard(item.id)}
             onMouseLeave={() => setHoveredCard(null)}
-            onClick={() => navigate(`/products/${item.category.toLowerCase()}`)} // ✅ navigate dynamically
+           onClick={() =>
+  navigate(`/products/${item.category.replace(/[^a-zA-Z]/g, "").toLowerCase()}`)
+}
+
             className={`cursor-pointer ${
               hoveredCard === item.id
                 ? "shadow-2xl bg-gradient-to-r from-green-900 via-green-800 to-amber-900/95 backdrop-blur-md"
@@ -128,6 +132,8 @@ export default function Products() {
                 )}
               </div>
 
+
+              
               {/* Specifications */}
               <div className="mb-2">
                 <h3 className="font-bold text-amber-100 mb-3 flex items-center gap-2 text-sm uppercase tracking-wide">

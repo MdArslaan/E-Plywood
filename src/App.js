@@ -12,6 +12,7 @@ import Products from './pages/Products';
 import Contact from './pages/Contact';
 import PastProjects from './pages/PastProjects';
 
+
 // Product Detail Pages
 import Door from './pages/Door';
 import Plywood from './pages/Plywood';
@@ -20,6 +21,7 @@ import Pvc from './pages/Pvc';
 import Mdf from './pages/Mdf';
 import Hdmr from './pages/Hdmr';
 import Laminates from './pages/Laminates';
+import VeneersTeak from './pages/VeneersTeak';
 
 function App() {
   return (
@@ -46,6 +48,7 @@ function App() {
             <Route path="/products/mdf" element={<Mdf />} />
             <Route path="/products/hdmr" element={<Hdmr />} />
             <Route path="/products/laminates" element={<Laminates />} />
+            <Route path="/products/veneersteak" element={<VeneersTeak />} />
 
           </Routes>
         </main>

@@ -23,7 +23,7 @@ export default function HomePage() {
     {
       image: "https://images.unsplash.com/photo-1615529182904-14819c35db37?w=1200&h=600&fit=crop",
       title: "Premium Quality Plywood",
-      subtitle: "Crafting Excellence Since 1994"
+      subtitle: "Crafting Excellence experience 1994"
     },
     {
       image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=600&fit=crop",
@@ -354,12 +354,12 @@ export default function HomePage() {
               <Phone className="w-10 h-10 text-amber-400 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-amber-300 mb-2">Call Us</h3>
               <p className="text-green-100">+91 98110 60872</p>
-              <p className="text-green-100">+91 95601 72292</p>
+              <p className="text-green-100">+91 78270 60872</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
               <Mail className="w-10 h-10 text-amber-400 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-amber-300 mb-2">Email Us</h3>
-              <p className="text-green-100">GRPSOCT72@gmail.com</p>
+              <p className="text-green-100">grps0872@gmail.com</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
               <MapPin className="w-10 h-10 text-amber-400 mx-auto mb-4" />

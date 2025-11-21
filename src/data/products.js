@@ -5,6 +5,7 @@ import Product4 from "../assests/Product4.png";
 import Product5 from "../assests/Product5.png";
 import Product6 from "../assests/Product6.png";
 import Product7 from "../assests/Product7.png";
+import Product8 from "../assests/Product8.png";
 
 const products = [
   {
@@ -153,6 +154,30 @@ const products = [
       thickness: "0.8mm – 1.2mm",
       warranty: "5 years",
       finish: "Gloss / Matte / Texture",
+    },
+  },
+
+ {
+    id: 8,
+    category: "Veneers & Teak",
+    name: "Premium Veneers & Teak Collection",
+    image: Product8,
+    description:
+      "Natural wood veneers and genuine teak skins for luxury furniture, doors and wall panels.",
+    features: [
+      "Architectural-grade sliced veneer",
+      "Book & slip-matched sequences",
+      "FSC-certified teak options",
+      "Ready-to-polish surface",
+      "250+ exotic species",
+    ],
+    specifications: {
+      material: "Natural wood veneer / teak",
+      thickness: "0.5 mm / 0.6 mm",
+      sheetSize: "8 ft × 4 ft",
+      species: "Teak, Walnut, Oak, Ebony, Gurjan",
+      warranty: "10 – Lifetime*",
+      application: "Furniture, Doors, Wall-cladding",
     },
   },
 ];
