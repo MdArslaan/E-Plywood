@@ -353,8 +353,8 @@ export default function HomePage() {
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
               <Phone className="w-10 h-10 text-amber-400 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-amber-300 mb-2">Call Us</h3>
-              <p className="text-green-100">+91 98110 60872</p>
-              <p className="text-green-100">+91 78270 60872</p>
+              <p className="text-green-100">+91 7827060872</p>
+              <p className="text-green-100">+91 011-45721543</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
               <Mail className="w-10 h-10 text-amber-400 mx-auto mb-4" />

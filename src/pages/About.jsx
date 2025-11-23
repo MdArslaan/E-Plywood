@@ -83,7 +83,8 @@ Plywood & Laminates</h1>
         </section>
 
 
-        {/* Leadership Section */} <section className="mb-16 scroll-animate"> <div className="bg-gradient-to-r from-green-900 via-green-800 to-amber-900/95 rounded-2xl shadow-xl p-8 text-white transform transition-all duration-500 hover:shadow-2xl"> <h2 className="text-3xl font-bold mb-8 flex items-center"> <Users className="mr-3 text-amber-300" /> Our Leadership </h2> <div className="grid md:grid-cols-2 gap-8"> {/* Piyush Singhal */} <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 transform transition-all duration-300 hover:bg-white/20 hover:scale-105"> <h3 className="text-2xl font-bold text-amber-300 mb-2">Piyush Singhal</h3> <p className="text-amber-100 text-sm mb-4">Proprietor | Managing Director & CEO</p> <div className="space-y-2 text-green-100"> <p className="flex items-center"> <Phone className="w-4 h-4 mr-2" /> +91 9811060872 </p> <p className="text-sm italic">Leading the company with vision and expertise</p> </div> </div> {/* Sandeep Singhal */} <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 transform transition-all duration-300 hover:bg-white/20 hover:scale-105"> <h3 className="text-2xl font-bold text-amber-300 mb-2">Sandeep Singhal</h3> <p className="text-amber-100 text-sm mb-4">Managing Director & CEO</p> <div className="space-y-2 text-green-100"> <p className="flex items-center"> <Phone className="w-4 h-4 mr-2" /> +91 9560172292 </p> <p className="text-sm italic">Driving operational excellence and growth</p> </div> </div> {/* Rekha Singhal */} <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 md:col-span-2 transform transition-all duration-300 hover:bg-white/20 hover:scale-105"> <h3 className="text-2xl font-bold text-amber-300 mb-2">Rekha Singhal</h3> <p className="text-amber-100 text-sm mb-4">Partner | Co-Founder</p> <p className="text-green-100 text-sm italic">Integral to the foundation and success of GRPS</p> </div> </div> </div> </section>
+        {/* Leadership Section */}
+         <section className="mb-16 scroll-animate"> <div className="bg-gradient-to-r from-green-900 via-green-800 to-amber-900/95 rounded-2xl shadow-xl p-8 text-white transform transition-all duration-500 hover:shadow-2xl"> <h2 className="text-3xl font-bold mb-8 flex items-center"> <Users className="mr-3 text-amber-300" /> Our Leadership </h2> <div className="grid md:grid-cols-2 gap-8"> {/* Piyush Singhal */} <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 transform transition-all duration-300 hover:bg-white/20 hover:scale-105"> <h3 className="text-2xl font-bold text-amber-300 mb-2">Piyush Singhal</h3> <p className="text-amber-100 text-sm mb-4">Proprietor | Managing Director & CEO</p> <div className="space-y-2 text-green-100"> <p className="flex items-center"> <Phone className="w-4 h-4 mr-2" /> +91 7827060872 </p> <p className="text-sm italic">Leading the company with vision and expertise</p> </div> </div> {/* Sandeep Singhal */} <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 transform transition-all duration-300 hover:bg-white/20 hover:scale-105"> <h3 className="text-2xl font-bold text-amber-300 mb-2">Sandeep Singhal</h3> <p className="text-amber-100 text-sm mb-4">Managing Director & CEO</p> <div className="space-y-2 text-green-100"> <p className="flex items-center"> <Phone className="w-4 h-4 mr-2" /> +91  011-45721543 </p> <p className="text-sm italic">Driving operational excellence and growth</p> </div> </div> {/* Rekha Singhal */} <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 md:col-span-2 transform transition-all duration-300 hover:bg-white/20 hover:scale-105"> <h3 className="text-2xl font-bold text-amber-300 mb-2">Rekha Singhal</h3> <p className="text-amber-100 text-sm mb-4">Partner | Co-Founder</p> <p className="text-green-100 text-sm italic">Integral to the foundation and success of GRPS</p> </div> </div> </div> </section>
 
         {/* Work With Industry Giants Section */}
         <section data-aos="fade-up" data-aos-delay="300" className="scroll-animate mb-16">
@@ -174,13 +175,13 @@ Plywood & Laminates</h1>
                   <p className="flex items-center text-gray-700">
                     <Phone className="w-5 h-5 mr-3 text-green-700" />
                     <a href="tel:+919811060872" className="hover:text-green-900 transition">
-                      +91 98110 60872
+                      +91 7827060872
                     </a>
                   </p>
                   <p className="flex items-center text-gray-700">
                     <Phone className="w-5 h-5 mr-3 text-green-700" />
                     <a href="tel:+919560172292" className="hover:text-green-900 transition">
-                      +91 95601 72292
+                       +91 011-45721543
                     </a>
                   </p>
                 </div>
