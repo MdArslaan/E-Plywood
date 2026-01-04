@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-
+import ScrollToTop from './components/Scrolltotop';
 // Pages
 import Home from './pages/Home';
 import About from './pages/About';
@@ -27,6 +27,9 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col">
+
+          <ScrollToTop />
+      
         {/* Navbar */}
         <Navbar />
 

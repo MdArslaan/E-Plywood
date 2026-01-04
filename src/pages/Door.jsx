@@ -1,121 +1,70 @@
-// Door.jsx
+// DoorPremium.jsx
 import React, { useState } from "react";
-import ClubWood from "../assests/Door/ClubWood.png";
-import ClubWood25 from "../assests/Door/ClubWood25.png";
-import ClubWood32 from "../assests/Door/ClubWood32.png";
-import GreenDoor from "../assests/Door/GreenDoor.png";
-import Marino from "../assests/Door/Marino.png";
-import SainikDoor from "../assests/Door/SainkDoor.png";
+import BwpDoorClubWood from "../assests/Door/Bwp door club wood.png";
+import ClubwoodBwpDoor from "../assests/Door/Clubwood bwp door.png";
+import SanikDoor from "../assests/Door/SainkDoor.png";
 
 const doors = [
   {
     id: 1,
-    name: "Premium Wooden Door",
-    image: ClubWood,
+    name: "BWP Door Club Wood",
+    image: BwpDoorClubWood,
     features: [
-      "Solid hardwood structure for strength",
-      "Weather and termite resistant",
-      "Available in matte and glossy finishes",
-      "Customizable dimensions",
-      "Sound-insulated core",
+      "Boiling water proof grade construction",
+      "Premium club wood series",
+      "Marine-grade waterproofing technology",
+      "Termite and borer resistant",
+      "Suitable for high-moisture areas",
     ],
     specifications: {
-      Material: "Teak, Oak, or Engineered Wood",
-      Thickness: "25 mm – 40 mm",
-      
-      Finish: "Matte / Glossy",
+      Material: "Gurjan BWP Plywood",
+      Thickness: "32 mm – 35 mm",
+      Core: "Hardwood + BWP grade ply",
+      Finish: "Natural / Veneer / Laminate",
+      Warranty: "15 years",
     },
   },
   {
     id: 2,
-    name: "Green Ply Door",
-    image: GreenDoor,
+    name: "Clubwood BWP Door",
+    image: ClubwoodBwpDoor,
     features: [
-      "Boiling-water-proof plywood core",
-      "High-impact resistance",
-      "Eco-friendly resins",
-      "Borer & termite proof",
-      "Ready-to-paint surface",
+      "100% waterproof construction",
+      "Heavy-duty frame and stiles",
+      "Weather-resistant for exteriors",
+      "Fungus and moisture proof",
+      "Commercial-grade durability",
     ],
     specifications: {
-      Material: "Green Ply Platinum",
-      Thickness: "30 mm / 35 mm",
-      
-      Finish: "Natural / Veneer / Laminate",
+      Material: "BWP Marine Plywood",
+      Thickness: "32 mm – 35 mm",
+      Core: "Multi-ply hardwood",
+      Finish: "Raw / Laminate / Polish",
+      Warranty: "20 years",
     },
   },
   {
     id: 3,
     name: "Sainik Door",
-    image: SainikDoor,
+    image: SanikDoor,
     features: [
-      "Hardwood frame with particle core",
-      "Economical pricing",
-      "Seasoned wood to prevent warping",
-      "Pre-polished for quick install",
-      "Ideal for interior rooms",
+      "Trusted Sainik brand quality",
+      "Hardwood frame construction",
+      "Pre-seasoned to prevent warping",
+      "Cost-effective solution",
+      "Ideal for interior applications",
     ],
     specifications: {
-      Material: "Hardwood + Particle Board",
-      Thickness: "25 mm",
-            Finish: "Teak polish",
-    },
-  },
-  {
-    id: 4,
-    name: "Marino Door",
-    image: Marino,
-    features: [
-      "Marine-grade plywood construction",
-      "100 % waterproof",
-      "Fungus & borer resistant",
-      "Heavy-duty commercial use",
-      "Can be laminated or painted",
-    ],
-    specifications: {
-      Material: "Marine Ply 710 grade",
-      Thickness: "30 mm / 38 mm",
-      
-      Finish: "Raw / Laminate / Veneer",
-    },
-  },
-  {
-    id: 6,
-    name: "Club Wood Door 25 mm",
-    image: ClubWood25,
-    features: [
-      "Engineered wood frame",
-      "25 mm slim profile",
-      "Interior bedroom / bathroom use",
-      "Pre-veneered surface",
-      "Light-weight for easy handling",
-    ],
-    specifications: {
-      Material: "Engineered Wood",
-      Thickness: "25 mm",
-            Finish: "Natural veneer",
-    },
-  },
-  {
-    id: 7,
-    name: "Club Wood Door 32 mm",
-    image: ClubWood32,
-    features: [
-      "Thicker 32 mm stiles & rails",
-      "Engineered wood for stability",
-      "Sound dampening infill",
-      "Suitable for main interiors",
-      "Ready for paint or laminate",
-    ],
-    specifications: {
-      Material: "Engineered Wood",
-      Thickness: "32 mm",
-            Finish: "Raw / Laminate / Veneer",
+      Material: "Hardwood + MR Plywood",
+      Thickness: "32 mm – 35 mm",
+      Core: "Engineered wood core",
+      Finish: "Teak polish / Natural",
+      Warranty: "10 years",
     },
   },
 ];
 
-export default function Door() {
+export default function DoorPremium() {
   const [hovered, setHovered] = useState(null);
 
   return (
@@ -123,7 +72,7 @@ export default function Door() {
       {/* Header */}
       <div className="text-center mb-12 animate-fade-in-down">
         <h1 className="text-5xl font-bold mb-3 bg-gradient-to-r from-green-800 to-amber-800 bg-clip-text text-transparent">
-          Door Collection
+          Premium Door Collection
         </h1>
         <div className="w-24 h-1 bg-gradient-to-r from-green-800 to-amber-800 mx-auto rounded-full" />
       </div>

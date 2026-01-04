@@ -1,159 +1,319 @@
-// Plywood.jsx
+// PlywoodPremium.jsx
 import React, { useState } from "react";
 
-import img710 from "../assests/Plywood/710.png";
-import imgCentury from "../assests/Plywood/Century.png";
-import imgEcoTech from "../assests/Plywood/EcoTech.png";
-import imgEcoTechWater from "../assests/Plywood/EcoTechWater.png";
-import imgGreenMr from "../assests/Plywood/GreenMr.png";
-import imgMr from "../assests/Plywood/Mr.png";
-import imgRoyalClub from "../assests/Plywood/RoyalClub.png";
+import imgCenturyClubPrime from "../assests/Plywood/Century club prime.png";
+import imgCenturyWinMr from "../assests/Plywood/Century win mr.png";
+import imgClubwood710BWP from "../assests/Plywood/Clubwood 710 BWP.png";
+import imgEcotec710BWP from "../assests/Plywood/Ecotec 710 BWP.png";
+import imgEcotec710 from "../assests/Plywood/Ecotec 710.png";
+import imgEcotecMr from "../assests/Plywood/Ecotec mr.png";
+import imgGreenClub500 from "../assests/Plywood/Green club 500.png";
+import imgGreenMR from "../assests/Plywood/Green MR.png";
+import imgGreenply710 from "../assests/Plywood/Greenply 710.png";
+import imgGreenplyMR from "../assests/Plywood/GREENPLY MR.png";
+import imgRoyalClub710 from "../assests/Plywood/Royal club 710.png";
+import imgRoyalClubBWR32 from "../assests/Plywood/Royal club BWR 32.png";
+import imgRoyalClubBWR from "../assests/Plywood/Royal club BWR.png";
+import imgSainik710 from "../assests/Plywood/Sainik 710.png";
+import imgSainikMR from "../assests/Plywood/Sainik MR.png";
 
 const plywoodData = [
   {
     id: 1,
-    name: "710 BWP Plywood",
-    image: img710,
+    name: "Century Club Prime",
+    image: imgCenturyClubPrime,
     features: [
-      "Boiling-water-proof grade",
-      "Marine-grade durability",
-      "100% waterproof",
-      "Fungus & borer resistant",
+      "Premium club series plywood",
+      "Advanced ViroKill technology",
+      "Superior borer & termite protection",
+      "Calibrated for precision fit",
       "15-year warranty",
     ],
     specifications: {
       material: "Gurjan face & core",
-      thickness: "6 mm – 25 mm",
-      glue: "Phenol formaldehyde",
+      thickness: "32 mm – 35 mm",
+      glue: "BWP phenol formaldehyde",
       warranty: "15 years",
-      finish: "Raw / Veneer / Laminate",
+      finish: "Raw / Premium Veneer",
     },
   },
   {
     id: 2,
-    name: "Century Plywood",
-    image: imgCentury,
+    name: "Century Win MR",
+    image: imgCenturyWinMr,
     features: [
-      "Nation-wide trusted brand",
-      "Virokill technology option",
-      "Borer & termite resistant",
-      "Calibrated thickness",
-      "10- to lifetime warranty",
+      "Winner series for interiors",
+      "Moisture-resistant properties",
+      "High dimensional stability",
+      "Smooth face for finishing",
+      "10-year warranty",
     ],
     specifications: {
-      material: "Hardwood / Gurjan",
-      thickness: "4 mm – 25 mm",
-      glue: "MR / BWP / Fire-retardant",
-      warranty: "10 – Lifetime*",
-      finish: "Raw / Laminate / Veneer",
+      material: "Hardwood core",
+      thickness: "32 mm – 35 mm",
+      glue: "Urea formaldehyde (MR)",
+      warranty: "10 years",
+      finish: "Natural / Laminate / Paint",
     },
   },
   {
     id: 3,
-    name: "EcoTech MR Plywood",
-    image: imgEcoTech,
+    name: "Clubwood 710 BWP",
+    image: imgClubwood710BWP,
     features: [
-      "Low-emission eco bond",
-      "Moisture-resistant for interiors",
-      "High-density core",
-      "Precision calibrated",
-      "7-year warranty",
-    ],
-    specifications: {
-      material: "Plantation hardwood",
-      thickness: "4 mm – 18 mm",
-      glue: "E-zero MR glue",
-      warranty: "7 years",
-      finish: "Natural / Paint / Laminate",
-    },
-  },
-  {
-    id: 4,
-    name: "EcoTec Waterproof Plywood",
-    image: imgEcoTechWater,
-    features: [
-      "Exterior water-proof grade",
-      "Triple-core compression",
-      "Weather & termite shield",
-      "Zero surface core gaps",
-      "Lifetime warranty*",
+      "Boiling water proof grade",
+      "Enhanced marine durability",
+      "100% waterproof protection",
+      "Anti-fungal treatment",
+      "20-year warranty",
     ],
     specifications: {
       material: "100% Gurjan",
-      thickness: "12 mm – 25 mm",
-      glue: "BWP phenol bond",
-      warranty: "Lifetime*",
+      thickness: "32 mm – 35 mm",
+      glue: "Phenol formaldehyde BWP",
+      warranty: "20 years",
       finish: "Raw / Veneer",
     },
   },
   {
-    id: 5,
-    name: "Green MR Plywood",
-    image: imgGreenMr,
+    id: 4,
+    name: "Ecotec 710 BWP",
+    image: imgEcotec710BWP,
     features: [
-      "Moisture-resistant interior grade",
-      "Eco-friendly E-zero emission",
+      "Eco-friendly BWP grade",
+      "Marine-grade waterproofing",
+      "Low emission technology",
+      "Weather & termite resistant",
+      "Lifetime warranty*",
+    ],
+    specifications: {
+      material: "Gurjan hardwood",
+      thickness: "32 mm – 35 mm",
+      glue: "E-zero BWP phenol",
+      warranty: "Lifetime*",
+      finish: "Raw / Natural Veneer",
+    },
+  },
+  {
+    id: 5,
+    name: "Ecotec 710",
+    image: imgEcotec710,
+    features: [
+      "Premium 710 series",
+      "High-density compression",
       "Borer & termite proof",
-      "10-year warranty",
-      "Ready to laminate / paint",
+      "Consistent thickness calibration",
+      "12-year warranty",
     ],
     specifications: {
       material: "Hardwood + Gurjan veneer",
-      thickness: "4 mm – 25 mm",
-      glue: "UF resin (MR)",
-      warranty: "10 years",
-      finish: "Natural / Veneer / Laminate",
+      thickness: "32 mm – 35 mm",
+      glue: "Phenolic resin",
+      warranty: "12 years",
+      finish: "Natural / Laminate",
     },
   },
   {
     id: 6,
-    name: "MR Plywood",
-    image: imgMr,
+    name: "Ecotec MR",
+    image: imgEcotecMr,
     features: [
-      "Interior moisture resistance",
-      "Economical pricing",
-      "Consistent thickness",
-      "High screw-holding strength",
-      "Suitable for furniture & paneling",
+      "Eco-friendly interior grade",
+      "E-zero emission standard",
+      "Moisture-resistant core",
+      "High screw-holding capacity",
+      "8-year warranty",
     ],
     specifications: {
-      material: "Mixed hardwood",
-      thickness: "4 mm – 19 mm",
-      glue: "UF resin (MR)",
-      warranty: "5 years",
-      finish: "Raw / Laminate",
+      material: "Plantation hardwood",
+      thickness: "32 mm – 35 mm",
+      glue: "E-zero MR resin",
+      warranty: "8 years",
+      finish: "Natural / Paint / Laminate",
     },
   },
   {
     id: 7,
-    name: "Royal Club Plywood",
-    image: imgRoyalClub,
+    name: "Green Club 500",
+    image: imgGreenClub500,
     features: [
-      "Premium face veneer",
-      "Core composed of seasoned wood",
-      "Extra-thick face for sanding",
+      "Premium club 500 series",
+      "Enhanced durability",
       "Warp-free construction",
-      "12-year warranty",
+      "Termite & borer treatment",
+      "15-year warranty",
     ],
     specifications: {
       material: "Hardwood + Gurjan",
-      thickness: "6 mm – 30 mm",
-      glue: "MR / BWP optional",
+      thickness: "32 mm – 35 mm",
+      glue: "MR / BWR optional",
+      warranty: "15 years",
+      finish: "Raw / Designer Veneer",
+    },
+  },
+  {
+    id: 8,
+    name: "Green MR",
+    image: imgGreenMR,
+    features: [
+      "Interior moisture-resistant",
+      "Eco-friendly formulation",
+      "Termite & borer proof",
+      "Ready for lamination",
+      "10-year warranty",
+    ],
+    specifications: {
+      material: "Mixed hardwood",
+      thickness: "32 mm – 35 mm",
+      glue: "UF resin (MR)",
+      warranty: "10 years",
+      finish: "Natural / Laminate",
+    },
+  },
+  {
+    id: 9,
+    name: "Greenply 710",
+    image: imgGreenply710,
+    features: [
+      "Trusted Greenply brand",
+      "Superior 710 grade quality",
+      "Moisture & borer resistant",
+      "High-strength core",
+      "12-year warranty",
+    ],
+    specifications: {
+      material: "Gurjan + Hardwood",
+      thickness: "32 mm – 35 mm",
+      glue: "Phenolic BWP",
       warranty: "12 years",
-      finish: "Natural / Designer veneer",
+      finish: "Raw / Veneer",
+    },
+  },
+  {
+    id: 10,
+    name: "Greenply MR",
+    image: imgGreenplyMR,
+    features: [
+      "Standard MR grade plywood",
+      "Moisture-resistant properties",
+      "Economical pricing",
+      "Consistent quality control",
+      "7-year warranty",
+    ],
+    specifications: {
+      material: "Hardwood core",
+      thickness: "32 mm – 35 mm",
+      glue: "Urea formaldehyde (MR)",
+      warranty: "7 years",
+      finish: "Raw / Laminate",
+    },
+  },
+  {
+    id: 11,
+    name: "Royal Club 710",
+    image: imgRoyalClub710,
+    features: [
+      "Royal premium series",
+      "Extra-thick face veneer",
+      "Seasoned wood core",
+      "Superior finishing quality",
+      "15-year warranty",
+    ],
+    specifications: {
+      material: "Gurjan face + Hardwood",
+      thickness: "32 mm – 35 mm",
+      glue: "BWP / BWR grade",
+      warranty: "15 years",
+      finish: "Natural / Designer Veneer",
+    },
+  },
+  {
+    id: 12,
+    name: "Royal Club BWR 32",
+    image: imgRoyalClubBWR32,
+    features: [
+      "Boil water resistant grade",
+      "32mm specialized thickness",
+      "Weather-resistant properties",
+      "Warp-free technology",
+      "12-year warranty",
+    ],
+    specifications: {
+      material: "Hardwood + Gurjan veneer",
+      thickness: "32 mm",
+      glue: "BWR resin",
+      warranty: "12 years",
+      finish: "Raw / Veneer / Laminate",
+    },
+  },
+  {
+    id: 13,
+    name: "Royal Club BWR",
+    image: imgRoyalClubBWR,
+    features: [
+      "Boil water resistant series",
+      "Exterior grade protection",
+      "High-density compression",
+      "Termite & borer shield",
+      "15-year warranty",
+    ],
+    specifications: {
+      material: "Gurjan + Hardwood",
+      thickness: "32 mm – 35 mm",
+      glue: "BWR phenolic resin",
+      warranty: "15 years",
+      finish: "Natural / Veneer",
+    },
+  },
+  {
+    id: 14,
+    name: "Sainik 710",
+    image: imgSainik710,
+    features: [
+      "Sainik trusted quality",
+      "710 premium grade",
+      "Marine-grade waterproofing",
+      "Borer & termite treatment",
+      "15-year warranty",
+    ],
+    specifications: {
+      material: "100% Gurjan",
+      thickness: "32 mm – 35 mm",
+      glue: "BWP phenol formaldehyde",
+      warranty: "15 years",
+      finish: "Raw / Veneer",
+    },
+  },
+  {
+    id: 15,
+    name: "Sainik MR",
+    image: imgSainikMR,
+    features: [
+      "Moisture-resistant interior grade",
+      "Reliable Sainik brand",
+      "Cost-effective solution",
+      "Consistent thickness",
+      "8-year warranty",
+    ],
+    specifications: {
+      material: "Hardwood core",
+      thickness: "32 mm – 35 mm",
+      glue: "UF resin (MR)",
+      warranty: "8 years",
+      finish: "Raw / Laminate / Paint",
     },
   },
 ];
 
-export default function Plywood() {
+export default function PlywoodPremium() {
   const [hovered, setHovered] = useState(null);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-green-50 to-amber-50 py-12 px-6">
       {/* Header */}
-      <div className="text-center mb-12 animate-fade-in-down">
-        <h1 className="text-5xl font-bold mb-3 bg-gradient-to-r from-green-800 to-amber-800 bg-clip-text text-transparent">
-          Plywood Collection
+      <div className="text-center mb-12 animate-fade-in-down ">
+        <h1 className="text-5xl p-3 font-bold mb-3 bg-gradient-to-r from-green-800 to-amber-800 bg-clip-text text-transparent">
+          Plywood
         </h1>
         <div className="w-24 h-1 bg-gradient-to-r from-green-800 to-amber-800 mx-auto rounded-full" />
       </div>

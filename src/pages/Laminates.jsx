@@ -113,7 +113,7 @@ export default function Laminates() {
       {/* Header */}
       <div className="text-center mb-12 animate-fade-in-down">
         <h1 className="text-5xl font-bold mb-3 bg-gradient-to-r from-green-800 to-amber-800 bg-clip-text text-transparent">
-          Decorative Laminates
+          Laminates
         </h1>
         <div className="w-24 h-1 bg-gradient-to-r from-green-800 to-amber-800 mx-auto rounded-full" />
       </div>
