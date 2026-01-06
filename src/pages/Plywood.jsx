@@ -240,7 +240,8 @@ const plywoodData = [
     ],
     specifications: {
       material: "Hardwood + Gurjan veneer",
-      thickness:6-25mm glue: "BWR resin",
+      thickness: "6-25mm",
+      glue: "BWR resin",
       warranty: "12 years",
       finish: "Raw / Veneer / Laminate",
     },
