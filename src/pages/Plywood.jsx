@@ -31,7 +31,7 @@ const plywoodData = [
     ],
     specifications: {
       material: "Gurjan face & core",
-      thickness: "32 mm – 35 mm",
+      thickness: "6-25mm",
       glue: "BWP phenol formaldehyde",
       warranty: "15 years",
       finish: "Raw / Premium Veneer",
@@ -50,7 +50,7 @@ const plywoodData = [
     ],
     specifications: {
       material: "Hardwood core",
-      thickness: "32 mm – 35 mm",
+      thickness: "6-25mm",
       glue: "Urea formaldehyde (MR)",
       warranty: "10 years",
       finish: "Natural / Laminate / Paint",
@@ -69,7 +69,7 @@ const plywoodData = [
     ],
     specifications: {
       material: "100% Gurjan",
-      thickness: "32 mm – 35 mm",
+      thickness: "6-25mm",
       glue: "Phenol formaldehyde BWP",
       warranty: "20 years",
       finish: "Raw / Veneer",
@@ -88,7 +88,7 @@ const plywoodData = [
     ],
     specifications: {
       material: "Gurjan hardwood",
-      thickness: "32 mm – 35 mm",
+      thickness: "6-25mm",
       glue: "E-zero BWP phenol",
       warranty: "Lifetime*",
       finish: "Raw / Natural Veneer",
@@ -107,7 +107,7 @@ const plywoodData = [
     ],
     specifications: {
       material: "Hardwood + Gurjan veneer",
-      thickness: "32 mm – 35 mm",
+      thickness: "6-25mm",
       glue: "Phenolic resin",
       warranty: "12 years",
       finish: "Natural / Laminate",
@@ -126,7 +126,7 @@ const plywoodData = [
     ],
     specifications: {
       material: "Plantation hardwood",
-      thickness: "32 mm – 35 mm",
+      thickness: "6-25mm",
       glue: "E-zero MR resin",
       warranty: "8 years",
       finish: "Natural / Paint / Laminate",
@@ -145,7 +145,7 @@ const plywoodData = [
     ],
     specifications: {
       material: "Hardwood + Gurjan",
-      thickness: "32 mm – 35 mm",
+      thickness: "6-25mm",
       glue: "MR / BWR optional",
       warranty: "15 years",
       finish: "Raw / Designer Veneer",
@@ -164,7 +164,7 @@ const plywoodData = [
     ],
     specifications: {
       material: "Mixed hardwood",
-      thickness: "32 mm – 35 mm",
+      thickness: "6-25mm",
       glue: "UF resin (MR)",
       warranty: "10 years",
       finish: "Natural / Laminate",
@@ -183,7 +183,7 @@ const plywoodData = [
     ],
     specifications: {
       material: "Gurjan + Hardwood",
-      thickness: "32 mm – 35 mm",
+      thickness: "6-25mm",
       glue: "Phenolic BWP",
       warranty: "12 years",
       finish: "Raw / Veneer",
@@ -202,7 +202,7 @@ const plywoodData = [
     ],
     specifications: {
       material: "Hardwood core",
-      thickness: "32 mm – 35 mm",
+      thickness: "6-25mm",
       glue: "Urea formaldehyde (MR)",
       warranty: "7 years",
       finish: "Raw / Laminate",
@@ -221,7 +221,7 @@ const plywoodData = [
     ],
     specifications: {
       material: "Gurjan face + Hardwood",
-      thickness: "32 mm – 35 mm",
+      thickness: "6-25mm",
       glue: "BWP / BWR grade",
       warranty: "15 years",
       finish: "Natural / Designer Veneer",
@@ -240,8 +240,7 @@ const plywoodData = [
     ],
     specifications: {
       material: "Hardwood + Gurjan veneer",
-      thickness: "32 mm",
-      glue: "BWR resin",
+      thickness:6-25mm glue: "BWR resin",
       warranty: "12 years",
       finish: "Raw / Veneer / Laminate",
     },
@@ -259,7 +258,7 @@ const plywoodData = [
     ],
     specifications: {
       material: "Gurjan + Hardwood",
-      thickness: "32 mm – 35 mm",
+      thickness: "6-25mm",
       glue: "BWR phenolic resin",
       warranty: "15 years",
       finish: "Natural / Veneer",
@@ -278,7 +277,7 @@ const plywoodData = [
     ],
     specifications: {
       material: "100% Gurjan",
-      thickness: "32 mm – 35 mm",
+      thickness: "6-25mm",
       glue: "BWP phenol formaldehyde",
       warranty: "15 years",
       finish: "Raw / Veneer",
@@ -297,7 +296,7 @@ const plywoodData = [
     ],
     specifications: {
       material: "Hardwood core",
-      thickness: "32 mm – 35 mm",
+      thickness: "6-25mm",
       glue: "UF resin (MR)",
       warranty: "8 years",
       finish: "Raw / Laminate / Paint",

@@ -18,7 +18,7 @@ const doors = [
     ],
     specifications: {
       Material: "Gurjan BWP Plywood",
-      Thickness: "32 mm – 35 mm",
+      Thickness: "30 mm -32 mm – 35 mm",
       Core: "Hardwood + BWP grade ply",
       Finish: "Natural / Veneer / Laminate",
       Warranty: "15 years",
@@ -37,7 +37,7 @@ const doors = [
     ],
     specifications: {
       Material: "BWP Marine Plywood",
-      Thickness: "32 mm – 35 mm",
+      Thickness: "30 mm -32 mm – 35 mm",
       Core: "Multi-ply hardwood",
       Finish: "Raw / Laminate / Polish",
       Warranty: "20 years",
@@ -56,7 +56,7 @@ const doors = [
     ],
     specifications: {
       Material: "Hardwood + MR Plywood",
-      Thickness: "32 mm – 35 mm",
+      Thickness: "30 mm-32 mm – 35 mm",
       Core: "Engineered wood core",
       Finish: "Teak polish / Natural",
       Warranty: "10 years",
