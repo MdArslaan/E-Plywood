@@ -1,6 +1,5 @@
 // Flexi.jsx
 import React, { useState } from "react";
-import FloristaFlexiImg from "../assests/Flexi/Florista-Flexi.png";
 import GreenFlexiImg from "../assests/Flexi/Green-Flexi.png";
 import ImportedFlexiImg from "../assests/Flexi/Imp-Flexi.png";
 import IndianFlexiImg from "../assests/Flexi/Indian-Flexi.png";
@@ -67,25 +66,7 @@ const flexiData = [
     },
   },
 
-  {
-    id: 4,
-    name: "Florista Flexi",
-    image: FloristaFlexiImg,
-    features: [
-      "Designer dyed veneers",
-      "Ready-to-use coloured faces",
-      "No extra finishing required",
-      "Perfect for visible curved surfaces",
-      "Matching edge-band supplied",
-    ],
-    specifications: {
-      material: "Dyed hardwood veneer",
-      thickness: "6 mm / 12 mm",
-      colour: "Teak / Walnut / Wenge / Cherry",
-      warranty: "Brand Warranty",
-      bendRadius: "8 – 12 times thickness",
-    },
-  },
+ 
 ];
 
 export default function Flexi() {

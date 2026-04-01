@@ -1,11 +1,10 @@
-// Laminates.jsx
 import React, { useState } from "react";
-import BlackCobraLaminates from "../assests/Laminates/Black-Cobra-Laminates.png"; 
 import GreenLamLaminates from "../assests/Laminates/Greenlam.png";
-import RoyalTouchLaminates from "../assests/Laminates/Royal_touch.png";
-import Century from "../assests/Laminates/Century.png"
 import MeriloLamp from "../assests/Laminates/Merilo.png";
-
+import RoyalTouchLaminates from "../assests/Laminates/Royal_touch.png";
+import Century from "../assests/Laminates/Century.png";
+import Skydecor from "../assests/Laminates/Skydecor.png";
+import DivyaLam from "../assests/Laminates/DivyaLam.png";
 
 const laminateData = [
   {
@@ -29,25 +28,6 @@ const laminateData = [
   },
   {
     id: 2,
-    name: "Black Cobra Laminates",
-    image: BlackCobraLaminates,
-    features: [
-      "High-abrasion overlay",
-      "Deep colour fastness",
-      "Anti-bacterial surface",
-      "Synchro-pore texture",
-      "12-year warranty",
-    ],
-    specifications: {
-      thickness: "0.6 mm / 3 mm",
-      sheetSize: "8 ft × 4 ft",
-      finish: "Synchro / Matte / Gloss",
-      warranty: "Brand Warranty",
-      application: "Commercial & Residential",
-    },
-  },
-  {
-    id: 3,
     name: "Royal Touch Laminates",
     image: RoyalTouchLaminates,
     features: [
@@ -66,7 +46,7 @@ const laminateData = [
     },
   },
   {
-    id: 4,
+    id: 3,
     name: "Century Laminates",
     image: Century,
     features: [
@@ -103,19 +83,81 @@ const laminateData = [
       application: "Furniture, Wall Panels",
     },
   },
+  {
+    id: 4,
+    name: "Skydecor Laminates",
+    image: Skydecor,
+    features: [
+      "Vibrant colour range",
+      "High-pressure laminate",
+      "Scratch & moisture resistant",
+      "Wide design collection",
+      "10-year warranty",
+    ],
+    specifications: {
+      thickness: "0.6 mm / 3 mm",
+      sheetSize: "8 ft × 4 ft",
+      finish: "Matte / Gloss / Texture",
+      warranty: "Brand Warranty",
+      application: "Furniture, Wall, Door",
+    },
+  },
+  {
+    id: 6,
+    name: "Divya Lam Laminates",
+    image: DivyaLam,
+    features: [
+      "Rich texture surface",
+      "Durable & long-lasting",
+      "Anti-scratch coating",
+      "Elegant design palette",
+      "10-year warranty",
+    ],
+    specifications: {
+      thickness: "0.6 mm / 3 mm",
+      sheetSize: "8 ft × 4 ft",
+      finish: "Matte / Gloss / Sync-pore",
+      warranty: "Brand Warranty",
+      application: "Furniture, Wall Panels",
+    },
+  },
 ];
 
 export default function Laminates() {
   const [hovered, setHovered] = useState(null);
 
+  // ✅ STATIC CATEGORY LABELS (NOT CLICKABLE)
+  const laminateTypes = [
+    "PVC",
+    "Acrylic",
+    "Liner / Inner",
+    "0.8 mm",
+    "1 mm",
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-green-50 to-amber-50 py-12 px-6">
+      
       {/* Header */}
       <div className="text-center mb-12 animate-fade-in-down">
         <h1 className="text-5xl font-bold mb-3 bg-gradient-to-r from-green-800 to-amber-800 bg-clip-text text-transparent">
           Laminates
         </h1>
         <div className="w-24 h-1 bg-gradient-to-r from-green-800 to-amber-800 mx-auto rounded-full" />
+        
+        {/* ✅ STATIC CATEGORY TAGS */}
+        <div className="flex flex-wrap justify-center gap-4 mt-6">
+          {laminateTypes.map((type, index) => (
+            <div
+              key={index}
+              className="px-6 py-2 rounded-xl font-semibold
+              bg-gradient-to-r from-green-800 to-amber-800 text-white
+              shadow-md cursor-default"
+            >
+              {type}
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Grid */}
@@ -140,10 +182,10 @@ export default function Laminates() {
                 alt={p.name}
                 className="absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
               />
-              {/* Gradient Overlay */}
+
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              {/* Badge */}
-              <div className="absolute top-4 left-4 bg-amber-100/95 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg transform translate-x-0 group-hover:translate-x-2 transition-transform duration-300 border border-amber-200">
+
+              <div className="absolute top-4 left-4 bg-amber-100/95 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg border border-amber-200">
                 <span className="text-sm font-semibold text-green-900">
                   {p.name}
                 </span>
@@ -159,27 +201,14 @@ export default function Laminates() {
                 <span className="w-1 h-4 bg-amber-400 rounded-full" />
                 Features
               </h3>
+
               <ul className="space-y-2 mb-5">
                 {p.features.map((f, i) => (
                   <li
                     key={i}
-                    className="flex items-start gap-2 text-amber-50 text-sm transform transition-all duration-300 hover:translate-x-1"
-                    style={{
-                      animationDelay: `${hovered === p.id ? i * 50 : 0}ms`,
-                    }}
+                    className="flex items-start gap-2 text-amber-50 text-sm"
                   >
-                    <svg
-                      className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <span>{f}</span>
+                    ✔ {f}
                   </li>
                 ))}
               </ul>
@@ -189,34 +218,26 @@ export default function Laminates() {
                 <span className="w-1 h-4 bg-green-400 rounded-full" />
                 Specifications
               </h3>
-              <div className="bg-green-950/30 rounded-xl p-4 space-y-2 backdrop-blur-sm border border-green-800/30">
+
+              <div className="bg-green-950/30 rounded-xl p-4 space-y-2 border border-green-800/30">
                 {Object.entries(p.specifications).map(([k, v]) => (
-                  <div
-                    key={k}
-                    className="flex justify-between items-center py-2 border-b border-amber-700/30 last:border-0 text-sm hover:bg-green-800/20 hover:px-2 rounded transition-all duration-200"
-                  >
-                    <span className="font-medium text-amber-200">
-                      {k
-                        .replace(/[_-]/g, " ")
-                        .split(" ")
-                        .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-                        .join(" ")}
-                    </span>
-                    <span className="text-amber-50 font-semibold">{v}</span>
+                  <div key={k} className="flex justify-between text-sm">
+                    <span className="text-amber-200">{k}</span>
+                    <span className="text-amber-50">{v}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Decorative Line */}
-            <div className="h-1 bg-gradient-to-r from-amber-500 via-green-500 to-amber-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-          
-         </div>
+            <div className="h-1 bg-gradient-to-r from-amber-500 via-green-500 to-amber-600" />
+          </div>
         ))}
       </div>
-  
 
-    <h1 className="text-center m-4 p-6 text-3xl text-amber-950 font-semibold"> Many More Trusted Brands on Order </h1>
+      <h1 className="text-center m-4 p-6 text-3xl text-amber-950 font-semibold">
+        Many More Trusted Brands on Order
+      </h1>
+
       {/* Animations */}
       <style jsx>{`
         @keyframes fadeInDown {
