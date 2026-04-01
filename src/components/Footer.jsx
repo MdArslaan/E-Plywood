@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="bg-gradient-to-r from-green-900 via-green-800 to-amber-800 text-white mt-16">
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 py-14">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-          
+
           {/* Company Info */}
           <div className="flex flex-col items-start space-y-4">
             <div className="flex items-center space-x-3">
@@ -40,10 +40,10 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-semibold mb-4 text-amber-400">Our Products</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-green-100 hover:text-white transition">Marine Plywood</a></li>
-              <li><a href="#" className="text-green-100 hover:text-white transition">Commercial Plywood</a></li>
-              <li><a href="#" className="text-green-100 hover:text-white transition">Decorative Laminates</a></li>
-              <li><a href="#" className="text-green-100 hover:text-white transition">Blockboards</a></li>
+              <li><Link to="/products/plywood" className="text-green-100 hover:text-white transition">Marine Plywood</Link></li>
+              <li><Link to="/products/plywood" className="text-green-100 hover:text-white transition">Commercial Plywood</Link></li>
+              <li><Link to="/products/laminates" className="text-green-100 hover:text-white transition">Decorative Laminates</Link></li>
+              <li><Link to="/products/blockboard" className="text-green-100 hover:text-white transition">Blockboards</Link></li>
             </ul>
           </div>
 
@@ -67,7 +67,7 @@ const Footer = () => {
                 <Phone className="w-5 h-5 mr-3 text-amber-400" />
                 <a href="tel:+91 01145721543" className="hover:text-white">+91 011-45721543</a>
               </li>
-              
+
             </ul>
           </div>
         </div>
