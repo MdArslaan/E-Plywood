@@ -15,7 +15,7 @@ const hdmrData = [
       "High-density moisture-resistant board",
       "Zero-swell technology",
       "Borer & termite proof",
-      "10-year warranty",
+      "Brand Warranty",
       "Ready for laminate / veneer / paint",
     ],
     specifications: {
@@ -23,7 +23,7 @@ const hdmrData = [
       density: "≥ 850 kg/m³",
       thickness: "3 mm – 25 mm",
       sheetSize: "8 ft × 4 ft (Std)",
-      warranty: "10 years",
+      warranty: "Brand Warranty",
     },
   },
   {
@@ -42,7 +42,7 @@ const hdmrData = [
       density: "≥ 850 kg/m³",
       thickness: "3 mm – 30 mm",
       sheetSize: "8 ft × 4 ft",
-      warranty: "10 years",
+      warranty: "Brand Warranty",
     },
   },
   {
@@ -73,14 +73,14 @@ const hdmrData = [
       "Low thickness swell",
       "Eco-friendly production",
       "Ideal for CNC & routing",
-      "12-year warranty",
+      "Brand Warranty",
     ],
     specifications: {
       material: "Hardwood fibre + moisture shield",
       density: "≥ 870 kg/m³",
       thickness: "3 mm – 30 mm",
       sheetSize: "8 ft × 4 ft",
-      warranty: "12 years",
+      warranty: "Brand Warranty",
     },
   },
   {
@@ -92,14 +92,14 @@ const hdmrData = [
       "Superior moisture resistance",
       "High-impact strength",
       "Ready for direct lamination",
-      "10-year warranty",
+      "Brand Warranty",
     ],
     specifications: {
       material: "Hardwood fibre + special resin",
       density: "≥ 860 kg/m³",
       thickness: "3 mm – 25 mm",
       sheetSize: "8 ft × 4 ft",
-      warranty: "10 years",
+      warranty: "Brand Warranty",
     },
   },
   {
@@ -111,14 +111,14 @@ const hdmrData = [
       "Moisture-resistant for kitchens",
       "High-internal bond strength",
       "Smooth surface for painting",
-      "10-year warranty",
+      "Brand Warranty",
     ],
     specifications: {
       material: "Hardwood fibre + E-zero resin",
       density: "≥ 850 kg/m³",
       thickness: "3 mm – 25 mm",
       sheetSize: "8 ft × 4 ft",
-      warranty: "10 years",
+      warranty: "Brand Warranty",
     },
   },
 ];

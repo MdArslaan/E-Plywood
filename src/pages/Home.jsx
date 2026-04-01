@@ -210,25 +210,25 @@ export default function HomePage() {
             <div className="w-24 h-1 bg-amber-600 mx-auto mt-6"></div>
           </div>
 
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {[
-              { name: "Timber", icon: <Trees className="w-12 h-12 text-green-700" />, color: "from-green-50 to-green-100" },
-              { name: "Plywood", icon: <Layers className="w-12 h-12 text-amber-700" />, color: "from-amber-50 to-amber-100" },
-              { name: "Flexi Plywood", icon: <Package className="w-12 h-12 text-green-700" />, color: "from-green-50 to-green-100" },
-              { name: "Laminates", icon: <Brush className="w-12 h-12 text-amber-600" />, color: "from-amber-50 to-amber-100" },
-              { name: "Veneers", icon: <Sparkles className="w-12 h-12 text-green-700" />, color: "from-green-50 to-green-100" },
-              { name: "Decoratives", icon: <CheckCircle2 className="w-12 h-12 text-amber-700" />, color: "from-amber-50 to-amber-100" },
-            ].map((product, index) => (
-              <div
-                key={index}
-                onClick={() => handleNavigation('/products')}
-                className={`bg-gradient-to-br ${product.color} rounded-2xl shadow-lg p-8 text-center border-t-4 border-green-700 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 cursor-pointer`}
-              >
-                <div className="flex justify-center mb-4">{product.icon}</div>
-                <h3 className="text-xl font-bold text-green-900">{product.name}</h3>
-              </div>
-            ))}
-          </div>
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+  {[
+    
+    { name: "Plywood", path: "/products/plywood", icon: <Layers className="w-12 h-12 text-amber-700" />, color: "from-amber-50 to-amber-100" },
+    { name: "Flexi Plywood", path: "/products/flexi", icon: <Package className="w-12 h-12 text-green-700" />, color: "from-green-50 to-green-100" },
+    { name: "Laminates", path: "/products/laminates", icon: <Brush className="w-12 h-12 text-amber-600" />, color: "from-amber-50 to-amber-100" },
+    { name: "Veneers", path: "/products/veneersteak", icon: <Sparkles className="w-12 h-12 text-green-700" />, color: "from-green-50 to-green-100" },
+    { name: "Decoratives", path: "/products/mdf", icon: <CheckCircle2 className="w-12 h-12 text-amber-700" />, color: "from-amber-50 to-amber-100" },
+  ].map((product, index) => (
+    <div
+      key={index}
+      onClick={() => handleNavigation(product.path)}
+      className={`bg-gradient-to-br ${product.color} rounded-2xl shadow-lg p-8 text-center border-t-4 border-green-700 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 cursor-pointer`}
+    >
+      <div className="flex justify-center mb-4">{product.icon}</div>
+      <h3 className="text-xl font-bold text-green-900">{product.name}</h3>
+    </div>
+  ))}
+</div>
         </div>
       </section>
 

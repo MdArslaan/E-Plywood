@@ -14,14 +14,14 @@ const mdfData = [
       "Eco-friendly E-zero formaldehyde",
       "Precision-calibrated thickness",
       "High-internal bond strength",
-      "10-year warranty",
+      "Brand warranty",
     ],
     specifications: {
       material: "Hardwood fibres + MR resin",
       density: "750 kg/m³",
       thickness: "3 mm – 25 mm",
       glue: "E-zero MR / BWR optional",
-      warranty: "10 years",
+      warranty: "Brand Warranty",
     },
   },
   {
@@ -40,7 +40,7 @@ const mdfData = [
       density: "720–780 kg/m³",
       thickness: "2.5 mm – 30 mm",
       finish: "Raw / Pre-primed / Colour",
-      warranty: "10 years",
+      warranty: "Brand Warranty",
     },
   },
 ];

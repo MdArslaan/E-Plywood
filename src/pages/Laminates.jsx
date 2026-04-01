@@ -20,10 +20,10 @@ const laminateData = [
       "10-year warranty",
     ],
     specifications: {
-      thickness: "0.8 mm / 1 mm",
+      thickness: "0.6 mm / 3 mm",
       sheetSize: "8 ft × 4 ft",
       finish: "Matte / Gloss / Texture",
-      warranty: "10 years",
+      warranty: "Brand Warranty",
       application: "Furniture, Wall, Door",
     },
   },
@@ -39,10 +39,10 @@ const laminateData = [
       "12-year warranty",
     ],
     specifications: {
-      thickness: "0.8 mm / 1 mm",
+      thickness: "0.6 mm / 3 mm",
       sheetSize: "8 ft × 4 ft",
       finish: "Synchro / Matte / Gloss",
-      warranty: "12 years",
+      warranty: "Brand Warranty",
       application: "Commercial & Residential",
     },
   },
@@ -58,10 +58,10 @@ const laminateData = [
       "10-year warranty",
     ],
     specifications: {
-      thickness: "0.8 mm",
+      thickness: "0.6 mm / 3 mm",
       sheetSize: "8 ft × 4 ft",
       finish: "Velvet / Matte",
-      warranty: "10 years",
+      warranty: "Brand Warranty",
       application: "Bedroom, Living, Hospitality",
     },
   },
@@ -77,10 +77,10 @@ const laminateData = [
       "Lifetime warranty*",
     ],
     specifications: {
-      thickness: "0.7 mm – 1.5 mm",
+      thickness: "0.6 mm / 3 mm",
       sheetSize: "8 ft × 4 ft",
       finish: "Suede / Gloss / Matt",
-      warranty: "Lifetime*",
+      warranty: "Brand Warranty",
       application: "Furniture, Wall, Door",
     },
   },
@@ -96,10 +96,10 @@ const laminateData = [
       "10-year warranty",
     ],
     specifications: {
-      thickness: "0.8 mm",
+      thickness: "0.6 mm / 3 mm",
       sheetSize: "8 ft × 4 ft",
       finish: "Sync-pore / Matte",
-      warranty: "10 years",
+      warranty: "Brand Warranty",
       application: "Furniture, Wall Panels",
     },
   },
@@ -210,10 +210,13 @@ export default function Laminates() {
 
             {/* Decorative Line */}
             <div className="h-1 bg-gradient-to-r from-amber-500 via-green-500 to-amber-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-          </div>
+          
+         </div>
         ))}
       </div>
+  
 
+    <h1 className="text-center m-4 p-6 text-3xl text-amber-950 font-semibold"> Many More Trusted Brands on Order </h1>
       {/* Animations */}
       <style jsx>{`
         @keyframes fadeInDown {
