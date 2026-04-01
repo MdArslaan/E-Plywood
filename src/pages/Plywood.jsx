@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import imgCenturyClubPrime from "../assests/Plywood/Century club prime.png";
 import imgCenturyWinMr from "../assests/Plywood/Century win mr.png";
@@ -35,8 +35,7 @@ const plywoodData = [
 ];
 
 export default function PlywoodPremium() {
-  const [hovered, setHovered] = useState(null);
-  const [selectedCategory, setSelectedCategory] = useState("MR");
+  const [selectedCategory, setSelectedCategory] = React.useState("MR");
 
   const categories = [
     { name: "MR / Commercial", value: "MR" },
@@ -79,8 +78,6 @@ export default function PlywoodPremium() {
         {filteredData.map((p) => (
           <div
             key={p.id}
-            onMouseEnter={() => setHovered(p.id)}
-            onMouseLeave={() => setHovered(null)}
             className="rounded-3xl overflow-hidden transition-all duration-500 hover:-translate-y-3 bg-gradient-to-r from-green-900 to-amber-900 text-white"
           >
             {/* Image */}
