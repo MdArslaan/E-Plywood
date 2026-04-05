@@ -2,7 +2,7 @@ import Product1 from "../assests/Product1.png";
 import Product2 from "../assests/Product2.png";
 import Product3 from "../assests/Product3.jpg";
 import Product4 from "../assests/Product4.png";
-import Product5 from "../assests/Product5.png";
+
 import Product6 from "../assests/Product6.png";
 import Product7 from "../assests/Product7.png";
 import Product8 from "../assests/Product8.png";
@@ -92,27 +92,7 @@ const products = [
       finish: "Matte",
     },
   },
-  {
-    id: 5,
-    category: "MDF",
-    name: "Green Panel MDF Board",
-    image: Product5,
-    description:
-      "Medium Density Fibreboard (MDF) designed for smooth finishing, carving, and furniture manufacturing.",
-    features: [
-      "Smooth and uniform surface for painting",
-      "High dimensional stability",
-      "Eco-friendly and non-toxic resin",
-      "Ideal for CNC cutting and decorative work",
-      "Cost-effective alternative to wood",
-    ],
-    specifications: {
-      material: "Wood fibres bonded with resin",
-      density: "700–800 kg/m³",
-      thickness: "6mm – 25mm",
-      grade: "Interior / Exterior",
-    },
-  },
+ 
   {
     id: 6,
     category: "HDMR",
