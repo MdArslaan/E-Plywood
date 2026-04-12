@@ -53,7 +53,7 @@ const products = [
   {
     id: 3,
     category: "Flexi",
-    name: "Imported Flexi Plywood",
+    name: "Flexi Plywood",
     image: Product3,
     description:
       "Highly bendable plywood used for curved furniture, pillars, and unique interior designs. Lightweight yet durable.",
@@ -74,7 +74,7 @@ const products = [
   {
     id: 4,
     category: "PVC",
-    name: "Black Cobra PVC Sheet",
+    name: "PVC Sheet",
     image: Product4,
     description:
       "High-strength PVC sheets used for modular furniture and bathroom interiors. 100% waterproof and termite-proof.",
@@ -96,7 +96,7 @@ const products = [
   {
     id: 6,
     category: "HDMR",
-    name: "Action Tesa HDMR Board",
+    name: "HDMR Board",
     image: Product6,
     description:
       "High-Density Moisture Resistant boards ideal for modular furniture, kitchens, and bathroom interiors.",
@@ -118,7 +118,7 @@ const products = [
   {
     id: 7,
     category: "Laminates",
-    name: "Royal Touch Decorative Laminate",
+    name: " Laminate",
     image: Product7,
     description:
       "Premium decorative laminates used for furniture, wardrobes, doors, and walls with a luxurious finish.",

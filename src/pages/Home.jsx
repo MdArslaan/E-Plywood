@@ -205,14 +205,15 @@ export default function HomePage() {
             <div className="w-24 h-1 bg-amber-600 mx-auto mt-6"></div>
           </div>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
   {[
     
     { name: "Plywood", path: "/products/plywood", icon: <Layers className="w-12 h-12 text-amber-700" />, color: "from-amber-50 to-amber-100" },
     { name: "Flexi Plywood", path: "/products/flexi", icon: <Package className="w-12 h-12 text-green-700" />, color: "from-green-50 to-green-100" },
     { name: "Laminates", path: "/products/laminates", icon: <Brush className="w-12 h-12 text-amber-600" />, color: "from-amber-50 to-amber-100" },
     { name: "Veneers", path: "/products/veneersteak", icon: <Sparkles className="w-12 h-12 text-green-700" />, color: "from-green-50 to-green-100" },
-    { name: "Decoratives", path: "/products/mdf", icon: <CheckCircle2 className="w-12 h-12 text-amber-700" />, color: "from-amber-50 to-amber-100" },
+    { name: "HDMR", path: "/products/hdmr", icon: <Sparkles className="w-12 h-12 text-green-700" />, color: "from-green-50 to-green-100" },
+    { name: "MDF", path: "/products/mdf", icon: <CheckCircle2 className="w-12 h-12 text-amber-700" />, color: "from-amber-50 to-amber-100" },
   ].map((product, index) => (
     <div
       key={index}
