@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import BwpDoorClubWood from "../assests/Door/Bwp door club wood.png";
 import ClubwoodBwpDoor from "../assests/Door/Clubwood bwp door.png";
 import SanikDoor from "../assests/Door/SainkDoor.png";
-
+import GreenplyDoor from "../assests/Door/GreenplyDoor.png";
+import EcotecDoor from "../assests/Door/EcotecDoor.png";
 const doors = [
   {
     id: 1,
@@ -64,7 +65,47 @@ const doors = [
       Warranty: "Brand Warranty",
     },
   },
-];
+
+{
+  id: 4,
+  name: "Greenply Door",
+  image: GreenplyDoor,
+  features: [
+    "Premium Greenply brand quality",
+    "High durability and strength",
+    "Termite and moisture resistant",
+    "Smooth finish for modern interiors",
+    "Long-lasting performance",
+  ],
+  specifications: {
+    Material: "Greenply Plywood",
+    Thickness: "30 mm – 35 mm",
+    Core: "Engineered hardwood core",
+    Finish: "Laminate / Veneer / Polish",
+    Brand: "Greenply",
+    Warranty: "Brand Warranty",
+  },
+},
+{
+  id: 5,
+  name: "Ecotec Door",
+  image: EcotecDoor,
+  features: [
+    "Eco-friendly engineered door",
+    "Lightweight yet strong build",
+    "Water and borer resistant",
+    "Modern design for interiors",
+    "Cost-effective solution",
+  ],
+  specifications: {
+    Material: "Engineered Wood",
+    Thickness: "30 mm – 35 mm",
+    Core: "Solid core structure",
+    Finish: "Pre-laminated / Painted",
+    Brand: "Ecotec",
+    Warranty: "Brand Warranty",
+  },
+}];
 
 export default function DoorPremium() {
   const [hovered, setHovered] = useState(null);

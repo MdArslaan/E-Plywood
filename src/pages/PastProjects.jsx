@@ -142,8 +142,8 @@ Plywood & Laminates</span>, we offer a complete range of
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {[
               { number: "30+", label: "Years of Excellence", icon: <TrendingUp className="w-8 h-8" /> },
-              { number: "500+", label: "Projects Completed", icon: <Target className="w-8 h-8" /> },
-              { number: "1000+", label: "Happy Clients", icon: <Users className="w-8 h-8" /> },
+              { number: "5000+", label: "Projects Completed", icon: <Target className="w-8 h-8" /> },
+              { number: "10000+", label: "Happy Clients", icon: <Users className="w-8 h-8" /> },
               { number: "100%", label: "Quality Assurance", icon: <Shield className="w-8 h-8" /> },
             ].map((stat, index) => (
               <div

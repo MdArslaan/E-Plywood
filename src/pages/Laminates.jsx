@@ -66,7 +66,7 @@ const laminateData = [
   },
   {
     id: 5,
-    name: "Merilo Lamp Laminates",
+    name: "Merino laminates",
     image: MeriloLamp,
     features: [
       "Synchronised texture",

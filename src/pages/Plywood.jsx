@@ -17,30 +17,139 @@ import imgSainik710 from "../assests/Plywood/Sainik 710.png";
 import imgSainikMR from "../assests/Plywood/Sainik MR.png";
 
 const plywoodData = [
-  // BWP CATEGORY
-  { id: 1, name: "Century Club Prime", category: "BWP", image: imgCenturyClubPrime, features: ["Premium club series plywood"], specifications: { thickness: "6-25mm", warranty: "Brand Warranty" } },
-  { id: 3, name: "Clubwood 710 BWP", category: "BWP", image: imgClubwood710BWP, features: ["Boiling water proof"], specifications: { thickness: "6-25mm", warranty: "Brand Warranty" } },
-  { id: 4, name: "Ecotec 710 BWP", category: "BWP", image: imgEcotec710BWP, features: ["Marine grade"], specifications: { thickness: "6-25mm", warranty: "Brand Warranty" } },
-  { id: 9, name: "Greenply 710", category: "BWP", image: imgGreenply710, features: ["Premium 710"], specifications: { thickness: "6-25mm", warranty: "Brand Warranty" } },
-  { id: 11, name: "Royal Club 710", category: "BWP", image: imgRoyalClub710, features: ["Royal series"], specifications: { thickness: "6-25mm", warranty: "Brand Warranty" } },
+  // ================= BWP CATEGORY =================
+  {
+    id: 1,
+    name: "Century Club Prime",
+    category: "BWP",
+    image: imgCenturyClubPrime,
+    features: ["Premium club series plywood"],
+    specifications: { thickness: "6-25mm", warranty: "Brand Warranty" },
+  },
+  {
+    id: 3,
+    name: "Clubwood 710 BWP",
+    category: "BWP",
+    image: imgClubwood710BWP,
+    features: ["Boiling water proof"],
+    specifications: { thickness: "6-25mm", warranty: "Brand Warranty" },
+  },
+  {
+    id: 4,
+    name: "Ecotec 710 BWP",
+    category: "BWP",
+    image: imgEcotec710BWP,
+    features: ["Marine grade"],
+    specifications: { thickness: "6-25mm", warranty: "Brand Warranty" },
+  },
+  {
+    id: 7,
+    name: "Green Club 500",
+    category: "BWP", // ✅ FIXED (moved from BWR to BWP)
+    image: imgGreenClub500,
+    features: ["Green Club premium 500 grade", "Waterproof BWP grade"],
+    specifications: { thickness: "6-25mm", warranty: "Brand Warranty" },
+  },
+  {
+    id: 9,
+    name: "Greenply 710",
+    category: "BWP",
+    image: imgGreenply710,
+    features: ["Premium 710"],
+    specifications: { thickness: "6-25mm", warranty: "Brand Warranty" },
+  },
+  {
+    id: 11,
+    name: "Royal Club 710",
+    category: "BWP",
+    image: imgRoyalClub710,
+    features: ["Royal series"],
+    specifications: { thickness: "6-25mm", warranty: "Brand Warranty" },
+  },
 
-  // ✅ FIXED HERE
-  { id: 17, name: "Club 700 Green Platinum", category: "BWP", image: imgGreenply710, features: ["Premium 700 series"], specifications: { thickness: "6-25mm", warranty: "Brand Warranty" } },
+  // ================= BWR CATEGORY =================
+  {
+    id: 5,
+    name: "Ecotec 710",
+    category: "BWR",
+    image: imgEcotec710,
+    features: ["710 grade"],
+    specifications: { thickness: "6-25mm", warranty: "Brand Warranty" },
+  },
+  {
+    id: 12,
+    name: "Royal Club BWR 32",
+    category: "BWR",
+    image: imgRoyalClubBWR32,
+    features: ["BWR 32mm"],
+    specifications: { thickness: "6-25mm", warranty: "Brand Warranty" },
+  },
+  {
+    id: 13,
+    name: "Royal Club BWR",
+    category: "BWR",
+    image: imgRoyalClubBWR,
+    features: ["BWR"],
+    specifications: { thickness: "6-25mm", warranty: "Brand Warranty" },
+  },
+  {
+    id: 14,
+    name: "Sainik 710",
+    category: "BWR",
+    image: imgSainik710,
+    features: ["Sainik 710"],
+    specifications: { thickness: "6-25mm", warranty: "Brand Warranty" },
+  },
+  {
+    id: 16,
+    name: "Clubwood BWR",
+    category: "BWR",
+    image: imgClubwood710BWP,
+    features: ["Clubwood BWR grade"],
+    specifications: { thickness: "6-25mm", warranty: "Brand Warranty" },
+  },
 
-  // BWR CATEGORY
-  { id: 5, name: "Ecotec 710", category: "BWR", image: imgEcotec710, features: ["710 grade"], specifications: { thickness: "6-25mm", warranty: "Brand Warranty" } },
-  { id: 7, name: "Green Club 500", category: "BWR", image: imgGreenClub500, features: ["Durable"], specifications: { thickness: "6-25mm", warranty: "Brand Warranty" } },
-  { id: 12, name: "Royal Club BWR 32", category: "BWR", image: imgRoyalClubBWR32, features: ["BWR 32mm"], specifications: { thickness: "6-25mm", warranty: "Brand Warranty" } },
-  { id: 13, name: "Royal Club BWR", category: "BWR", image: imgRoyalClubBWR, features: ["BWR"], specifications: { thickness: "6-25mm", warranty: "Brand Warranty" } },
-  { id: 14, name: "Sainik 710", category: "BWR", image: imgSainik710, features: ["Sainik 710"], specifications: { thickness: "6-25mm", warranty: "Brand Warranty" } },
-  { id: 16, name: "Clubwood BWR", category: "BWR", image: imgClubwood710BWP, features: ["Clubwood BWR grade"], specifications: { thickness: "6-25mm", warranty: "Brand Warranty" } },
-
-  // MR CATEGORY
-  { id: 2, name: "Century Win MR", category: "MR", image: imgCenturyWinMr, features: ["Moisture-resistant"], specifications: { thickness: "6-25mm", warranty: "Brand Warranty" } },
-  { id: 6, name: "Ecotec MR", category: "MR", image: imgEcotecMr, features: ["Eco MR"], specifications: { thickness: "6-25mm", warranty: "Brand Warranty" } },
-  { id: 8, name: "Green MR", category: "MR", image: imgGreenMR, features: ["Interior MR"], specifications: { thickness: "6-25mm", warranty: "Brand Warranty" } },
-  { id: 10, name: "Greenply MR", category: "MR", image: imgGreenplyMR, features: ["Standard MR"], specifications: { thickness: "6-25mm", warranty: "Brand Warranty" } },
-  { id: 15, name: "Sainik MR", category: "MR", image: imgSainikMR, features: ["Sainik MR"], specifications: { thickness: "6-25mm", warranty: "Brand Warranty" } },
+  // ================= MR CATEGORY =================
+  {
+    id: 2,
+    name: "Century Win MR",
+    category: "MR",
+    image: imgCenturyWinMr,
+    features: ["Moisture-resistant"],
+    specifications: { thickness: "6-25mm", warranty: "Brand Warranty" },
+  },
+  {
+    id: 6,
+    name: "Ecotec MR",
+    category: "MR",
+    image: imgEcotecMr,
+    features: ["Eco MR"],
+    specifications: { thickness: "6-25mm", warranty: "Brand Warranty" },
+  },
+  {
+    id: 8,
+    name: "Green MR",
+    category: "MR",
+    image: imgGreenMR,
+    features: ["Interior MR"],
+    specifications: { thickness: "6-25mm", warranty: "Brand Warranty" },
+  },
+  {
+    id: 10,
+    name: "Greenply MR",
+    category: "MR",
+    image: imgGreenplyMR,
+    features: ["Standard MR"],
+    specifications: { thickness: "6-25mm", warranty: "Brand Warranty" },
+  },
+  {
+    id: 15,
+    name: "Sainik MR",
+    category: "MR",
+    image: imgSainikMR,
+    features: ["Sainik MR"],
+    specifications: { thickness: "6-25mm", warranty: "Brand Warranty" },
+  },
 ];
 
 export default function PlywoodPremium() {
@@ -59,12 +168,10 @@ export default function PlywoodPremium() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-green-50 to-amber-50 py-12 px-6">
 
-      {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-5xl font-bold mb-3 text-green-900">Plywood</h1>
       </div>
 
-      {/* Category Buttons */}
       <div className="flex justify-center gap-6 mb-12 flex-wrap">
         {categories.map((cat) => (
           <button
@@ -82,7 +189,6 @@ export default function PlywoodPremium() {
         ))}
       </div>
 
-      {/* Products */}
       <div className="max-w-7xl mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredData.map((p) => (
           <div

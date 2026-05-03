@@ -178,7 +178,7 @@ export default function HomePage() {
                     <div className="text-sm text-gray-600">Years Experience</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-4xl font-bold text-amber-700">1000+</div>
+                    <div className="text-4xl font-bold text-amber-700">10000+</div>
                     <div className="text-sm text-gray-600">Happy Clients</div>
                   </div>
                   <div className="text-center">

@@ -14,7 +14,7 @@ const Contact = () => {
 
   // ✅ Your working Google Apps Script URL
   const GOOGLE_SCRIPT_URL =
-    "https://script.google.com/macros/s/AKfycby49foIHF0LtnfcOOY8YFWzC33K4FUcsxSjFnN32kQS9LZFVNIItB1NNaRvaRjiFHRiZg/exec";
+    "https://script.google.com/macros/s/AKfycbzL3LZ_FjJNFvoDXJL1I5ph_qjq5sGjx0uDBpnXxPY4L9UqnZq_H8Z_H9Ef5Bc7csoC_w/exec";
 
   const showToast = (message, type) => {
     setToast({ show: true, message, type });
